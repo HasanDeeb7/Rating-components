@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+body {
+  background-color: #141519;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.thanks-card {
+  background-color: #1a212b;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 50vh;
+  padding: 3rem;
+  border-radius: 50px;
+}
+.thanks-card_component {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.img-user_choice {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.user-choice-container {
+  background-color: #24303b;
+  width: 30vh;
+  align-self: center;
+  border-radius: 30px;
+}
+.user-choice_text {
+  color: #c9722c;
+  padding: 1rem;
+}
+
+.appreciation-text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  line-height: 25px;
+}
+.appreciation-text {
+  color: #989fa9;
+}

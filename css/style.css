@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-Grey: hsl(217, 12%, 63%);
+  --medium-Grey: hsl(216, 12%, 54%);
+  --dark-Blue: #252d37;
+  --very-Dark-Blue: hsl(216, 12%, 8%);
+  --card-back-clr: #1a212a;
+  --font: "Overpass", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+body {
+  background-color: #141519;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  font-family: var(--font);
+}
+.rate-card {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 23%;
+  padding: 2rem;
+  border-radius: 20px;
+  z-index: 0;
+
+  /* adding radial gradient on top  */
+  background: radial-gradient(
+    circle closest-corner at top,
+    #232a34,
+    var(--card-back-clr) 15rem
+  );
+}
+.rate-card_components {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/*STAR BUTTON STYLE*/
+.fav-btn {
+  display: flex;
+  width: 1rem;
+  border-radius: 50px;
+  padding: 0.7rem;
+  background-color: #262f38;
+  border: transparent;
+}
+.fav-btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+/*HEADER AND PARAG STYLE*/
+.rate-us {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.parag {
+  color: #707682;
+  font-weight: 400;
+}
+
+/*RATING BUTTONS STYLE*/
+.rate-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.rate {
+  width: 2.6rem;
+  text-align: center;
+  border-radius: 30px;
+  padding: 0.8rem;
+  background-color: #262f38;
+  border: transparent;
+  color: #7c8898;
+}
+.rate:hover {
+  cursor: pointer;
+  background-color: #7c8898;
+  color: #fff;
+}
+.active {
+  background-color: #df782b;
+  color: #fff;
+}
+/* SUBMIT BUTTON */
+.submit-container {
+  align-self: center;
+  width: 70%;
+}
+.submit-btn {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 30px;
+  background-color: #fc7613;
+  border: transparent;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #df782b;
+}
+.hide {
+  display: none;
+}
+/* THANK YOU STATE CARD STYLE */
+.thanks-card {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+  border-radius: 50px;
+}
+.thanks-card_component {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.img-user_choice {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.user-choice-container {
+  background-color: #24303b;
+  align-self: center;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+.user-choice_text {
+  color: #c9722c;
+  padding: 1rem;
+}
+
+.appreciation-text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  line-height: 25px;
+}
+.appreciation-text {
+  color: #989fa9;
+}
+span {
+  color: #c9722c;
+}
+
+@media screen and (max-width: 1100px) {
+  .rate-card {
+    width:30%;
+  }
+}
+@media screen and (max-width: 840px) {
+    .rate-card{
+      width: 40%;
+    }
+}
+@media screen and (max-width:600px){
+  .rate-card{
+    width:60%;
+  }
+}
