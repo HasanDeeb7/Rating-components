@@ -79,6 +79,7 @@ body {
 .parag {
   color: #707682;
   font-weight: 400;
+  user-select: none;
 }
 
 /*RATING BUTTONS STYLE*/
@@ -120,6 +121,11 @@ body {
   cursor: pointer;
   background-color: #fff;
   color: #df782b;
+}
+.disabled{
+  opacity: .5;
+  pointer-events: none;
+
 }
 .hide {
   display: none;
